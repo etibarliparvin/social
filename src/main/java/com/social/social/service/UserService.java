@@ -15,4 +15,8 @@ public interface UserService {
     UserDto getUserById(Long id);
 
     List<UserDto> getAllUsers(Integer pageIndex, Integer pageSize);
+
+    Boolean existUserByUsername(String username);
+
+    Boolean existUserById(Long id);
 }

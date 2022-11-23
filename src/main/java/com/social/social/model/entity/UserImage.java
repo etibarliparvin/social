@@ -31,7 +31,7 @@ public class UserImage {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_user_image_id_gen")
     private Long id;
 
-    private String mediaType;
+    private String contentType;
     @Column(nullable = false)
     private Long size;
     @Column(nullable = false)

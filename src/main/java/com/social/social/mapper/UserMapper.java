@@ -8,11 +8,9 @@ import org.mapstruct.Mapper;
 import java.util.List;
 
 @Mapper(componentModel = "spring")
-public interface UserMapper {
+public abstract class UserMapper {
 
-    UserDto toUserDto(User user);
-
-    List<UserDto> toUserDto(List<User> users);
-
-    User toUserEntity(RegisterRequest registerRequest);
+    public abstract UserDto toUserDto(User user);
+    public abstract List<UserDto> toUserDto(List<User> users);
+    public abstract User toUserEntity(RegisterRequest registerRequest);
 }
